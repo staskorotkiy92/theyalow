@@ -60,7 +60,10 @@
       <div class="container">
         <section class="section section__slider">
           <div class="slider__item slide__video">
-            <video controls poster="assets/images/main/img/slide_video_img.png">
+            <video class="slider__mobile__size__video" controls poster="assets/images/main/img/slide_video_mobile.png">
+              <source src="#" type="video/mp4">
+            </video>
+            <video class="slider__desktop__size__video" controls poster="assets/images/main/img/slide_video_img.png">
               <source src="#" type="video/mp4">
             </video>
           </div>
@@ -74,6 +77,9 @@
     <div class="wrapper__inner second__background">
       <div class="container">
         <section class="section menu__section">
+          <div class="bg__shadow__decorator decorator1 second__background"></div>
+          <div class="bg__shadow__decorator decorator2 second__background"></div>
+          <div class="bg__shadow__decorator decorator3 second__background"></div>
           <div class="menu__item"><a href="#" class="menu__link">
             <svg width="110" height="75" viewBox="0 0 110 75" class="menu__icon1" xmlns="http://www.w3.org/2000/svg"
                  version="1.1"
@@ -114,8 +120,9 @@
             <div class="archive__item content__archive__item">
               <div class="archive__text__content"><span class="archive__article">
                 Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit,
-                sed do eiusmod tempor inci-<br>didunt ut</span>
+                consecte <span class="text__transfer__mobile">-</span><br class="text__transfer__mobile"> tur adipisicing elit,
+                sed do eiusmod temporinci<span class="text__transfer">-</span><br class="text__transfer">didunt <br
+                      class="text__transfer__mobile">ut</span>
                 <button class=" button button__add" name="adding__button" type="button">
                   <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14"
                        height="14" opacity="0.702" fill="#ffffff">
@@ -137,6 +144,29 @@
                   <path d="M13 9L9 9L9 13L6 13L6 9L2 9L2 6L6 6L6 2L9 2L9 6L13 6L13 9Z"/>
                 </svg>
               </button>
+            </div>
+          </div>
+          <div class="archive__data__item twitter__message__item">
+            <div class="twitter__logo"></div>
+            <div class="twitter__item">
+              <div class="twitter__message message__item">
+                <p class="twit__message">Daily Mobile UI Design Inspiration #1</p>
+                <p class="message__author">via @cssauthor</p>
+              </div>
+              <div class="twitter__message message__item">
+                <p class="twit__message">Daily Mobile UI Design Inspiration #1 </p>
+                <p class="message__author">via @cssauthor</p>
+              </div>
+              <div class="twitter__message message__item">
+                <p class="twit__message">Daily Mobile UI Design Inspiration #1 </p>
+                <p class="message__author">via @cssauthor</p>
+              </div>
+              <div class="twitter__message__field message__item">
+                <form action="index.html" method="post" class="twitter__message__form">
+                  <input type="text" name="tweet__message" class="message__input">
+                  <button class="button message__submit__button" type="submit">Tweet</button>
+                </form>
+              </div>
             </div>
           </div>
           <div class="archive__data__item archive__data__date">
@@ -161,9 +191,13 @@
             <div class="advertisement__description__part">
               <ul class="offer__list">
                 <li class="offer__item">Sed ut perspiciatis unde omnis</li>
-                <li class="offer__item">Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing</li>
+                <li class="offer__item">Lorem ipsum dolor sit amet, con<span class="text__transfer">-</span><br>sectetur
+                  adipisicing
+                </li>
                 <li class="offer__item">Sed ut perspiciatis unde omnis</li>
-                <li class="offer__item">Lorem ipsum dolor sit amet, con-<br>sectetur adipisicing</li>
+                <li class="offer__item">Lorem ipsum dolor sit amet, con<span class="text__transfer">-</span><br>sectetur
+                  adipisicing
+                </li>
               </ul>
             </div>
           </div>
